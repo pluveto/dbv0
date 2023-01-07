@@ -3,7 +3,9 @@
 #include <sys/types.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <stdint.h>
 #include <string.h>
+#define unreachable() __builtin_unreachable()
 
 typedef struct {
   char* buffer;
